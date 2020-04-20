@@ -1,0 +1,3 @@
+USERNAME: "jstanley@ezlinks.com"
+PASSWORD: "S@r@hWhit@k3r"
+CHECKED: "true"

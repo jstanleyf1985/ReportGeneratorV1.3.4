@@ -1,0 +1,25 @@
+<form id="sfform" class="col justify-content-center align-self-center">
+    <h1><i class="material-icons sort bluetext">sort </i> SalesForce Login</h1>
+    <div class="form-group">
+    <label for="sfusername">UserName: </label>
+    <input type="email" class="form-control bluetext" placeholder="Enter SalesForce Username" id="sfusername">
+    </div>
+    <div class="form-group">
+    <label for="sfpassword">Password:</label>
+    <input type="password" class="form-control bluetext" placeholder="Enter SalesForce Password" id="sfpassword">
+    </div>
+    <div class="form-group form-check">
+    <label class="form-check-label">
+        <input id="sfChecked" class="form-check-input bluetext" type="checkbox"> Save for later
+    </label>
+    </div>
+    <button id="sfsignin" type="button" class="bluebg">
+    <i class="material-icons people whiteText floatLeft">people</i><span class="sfsignin whitetext">Sign In</span></button>
+    <button id="sfreset" class="redbg clearfix">
+    <i class="material-icons cached whiteText floatLeft">cached</i><span class="sfreset whitetext">Reload App</span></button>
+
+    <div id="messages">
+    <div id="sfSigningInProgBar" class="progress-bar progress-bar-striped progress-bar-animated invisible"></div>
+    <div id="sfSignInErr" class="text-center redText invisible">Error Goes Here</div>
+    </div>
+</form>

@@ -1,0 +1,25 @@
+<form id="emailform" class="col justify-content-center align-self-center">
+    <h1><i class="material-icons email redText">email </i> Email Login</h1>
+    <div class="form-group">
+        <label for="emailusername">UserName: </label>
+        <input type="email" class="form-control bluetext" placeholder="Enter Email UserName" id="emailusername">
+    </div>
+    <div class="form-group">
+        <label for="emailpassword">Password:</label>
+        <input type="password" class="form-control bluetext" placeholder="Enter Email Password" id="emailpassword">
+    </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
+        <input id="emailChecked" class="form-check-input bluetext" type="checkbox"> Save for later
+        </label>
+    </div>
+    <button id="emailsignin" type="button" class="bluebg">
+        <i class="material-icons people whiteText floatLeft">people</i><span class="emailsignin whitetext">Sign In</span></button>
+    <button id="emailreset" class="redbg clearfix">
+        <i class="material-icons cached whiteText floatLeft">cached</i><span class="emailreset whitetext">Reload App</span></button>
+
+    <div id="emailmessages">
+        <div id="emailSigningInProgBar" class="progress-bar progress-bar-striped progress-bar-animated invisible"></div>
+        <div id="emailSignInErr" class="text-center redText invisible">Error goes here</div>
+    </div>
+</form>

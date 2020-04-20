@@ -1,0 +1,275 @@
+@font-face {
+  font-family: worksans;
+  src: url(../fonts/WorkSans-Regular.woff2);
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/Material.woff2) format('woff2')
+}
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: worksans, sans-serif;
+}
+
+#main {
+  width: 60%;
+  height: 60%;
+}
+#main h1 {
+  font-size: 1.2rem;
+  color: #444;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 0.2rem;
+  padding: 2%;
+}
+#sfform,
+#emailform {
+  border: 2px solid #444;
+  padding: 5%;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px #999;
+}
+#sfform button,
+#emailform button {
+  width: 100%;
+  border: 1px solid #444;
+  padding: 2%;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 5px #888;
+  margin-top: 1%;
+}
+#messages {
+  width: 100%;
+  margin: 0 auto;
+}
+#sfSigningInProgBar,
+#emailSigningInProgBar {
+  width: 99%;
+  height: 10px;
+  margin: 1% auto;
+  border-radius: 0.2rem;
+}
+.sfreset,
+.sfsignin,
+.emailsignin,
+.emailreset {
+  position: relative;
+  left: -4%;
+}
+.sort,
+.email {
+  position: relative;
+  bottom: -5px !important;
+}
+#loadingWrapper {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  height: 500px;
+}
+#loadingIcon {
+  font-size: 10rem;
+  margin-top: 20%;
+  animation-name: spinning;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#loadingText {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  animation-name: blinking;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#finalPage {
+  padding-top: 20%;
+}
+#finalPage button {
+  border: 1px solid #333;
+  border-radius: 0.2rem;
+  width: 100%;
+  margin: 1% 0;
+  padding: 2% 0;
+  box-shadow: 2px 2px 5px #555;
+}
+.finalBTN {
+  float: left;
+  position: relative;
+  left: 5%;
+  width: 24px;
+}
+#finalInfo {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2% 0;
+  width: 100%;
+  display: block;
+}
+#finalDirections {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+@keyframes spinning {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 75%;
+  }
+}
+
+/* Helper Styles */
+.bluetext,
+.blueText {
+  color: rgb(69, 132, 187);
+}
+.bluebg {
+  background-color: rgb(69, 132, 187);
+  color: #f1f1f1;
+}
+.bluebg:hover {
+  background-color: rgb(55, 115, 167);
+}
+.bluebg:active {
+  box-shadow: 0px 1px 3px rgba(40, 40, 40, 0.7);
+  transform: translateY(1px);
+  transition-duration: 0s;
+}
+.redbg {
+  background-color: #FF4136 !important;
+}
+.redbg:hover {
+  background-color: #da352d !important;
+}
+.redbg:active {
+  box-shadow: 0px 1px 3px rgba(40, 40, 40, 0.7);
+  transform: translateY(1px);
+  transition-duration: 0s;
+}
+.redText {
+  color: #ff4136;
+}
+.whiteText {
+  color: #f1f1f1;
+}
+.greenText {
+  color: #007700;
+}
+.blueText {
+  color: rgb(55, 115, 167);
+}
+.h-90 {
+  height: 90% !important;
+}
+.floatLeft {
+  float: left;
+}
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+.visible {
+  opacity: 1.0;
+  visibility: visible;
+}
+.hidden {
+  display: none !important;
+}
+
+/* MATERIAL ICONS SUPPORT */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+@media (min-width: 1px) and (max-width: 575px) {
+  #main {
+    width: 80%;
+  }
+}
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+  #main {
+    width: 70%;
+  }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  #main {
+    width: 65%;
+  }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #main  {
+    width: 60%;
+  }
+  #main h1 {
+    padding: 1%;
+  }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #main {
+    width: 50%;
+  }
+  #main h1 {
+    padding: 0.5%;
+  }
+}
